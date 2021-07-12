@@ -52,6 +52,7 @@ it ("PUT /api/medicine/60eba41cc6fcc308467516bb", async () => {
 });
 
 it ("should return 500 in PUT with wrong id", async () => {
+    // wrong id
     const response = await request(app).get('/api/medicine/60eba41cc6fcc308sd467516bb').send({
         name: "Vitamin D",
         description: "DDDDD",
